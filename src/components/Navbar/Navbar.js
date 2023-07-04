@@ -8,10 +8,12 @@ import {
   NavMenu,
   NavItem,
   NavLinks,
+  LogoImage,
 } from "./Navbar.elements";
 import { FaBars, FaTimes } from "react-icons/fa";
 
 import { IconContext } from "react-icons/lib/esm";
+import logoImage from "../../assets/images/Shanlogo.png";
 
 const Navbar = () => {
   const [clicked, setClicked] = useState(false);
@@ -25,15 +27,16 @@ const Navbar = () => {
         <Nav>
           <NavbarContainer>
             <NavLogo to="/">
-              <NavIcon />
-              Shan
+              {/* <NavIcon />
+              Shan */}
+              <LogoImage src={logoImage} />
             </NavLogo>
             <MobileIcon onClick={handleClick}>
               {clicked ? <FaTimes /> : <FaBars />}
             </MobileIcon>
             <NavMenu onClick={handleClick} clicked={clicked}>
               <NavItem>
-                <NavLinks to="/">Home</NavLinks>
+                <NavLinks to="/shanproducts/home">Home</NavLinks>
               </NavItem>
 
               <NavItem>

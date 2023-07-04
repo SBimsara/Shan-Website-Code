@@ -3,8 +3,12 @@ import { FaJava } from "react-icons/fa";
 import { Container } from "../../globalStyles";
 import { Link } from "react-router-dom";
 
+const primaryColor = "#000";
+const secondaryColor = "#fff";
+const ternaryColor = "#ef2d56";
+
 export const Nav = styled.nav`
-  background: #101522;
+  background: ${primaryColor};
   height: 80px;
   display: flex;
   justify-content: center;
@@ -24,7 +28,7 @@ export const NavbarContainer = styled(Container)`
 `;
 
 export const NavLogo = styled(Link)`
-  color: #fff;
+  color: ${secondaryColor};
   justify-self: flex-start;
   cursor: pointer;
   text-decoration: none;
@@ -33,6 +37,11 @@ export const NavLogo = styled(Link)`
   align-items: center;
 `;
 export const NavIcon = styled(FaJava)`
+  margin-right: 0.5rem;
+`;
+export const LogoImage = styled.img`
+  width: 130px;
+  height: 100px;
   margin-right: 0.5rem;
 `;
 
@@ -53,7 +62,7 @@ export const MobileIcon = styled.div`
 export const NavMenu = styled.ul`
   display: flex;
   align-items: center;
-  list-items: none;
+  list-style: none;
   text-align: center;
 
   @media screen and (max-width: 960px) {
@@ -66,7 +75,7 @@ export const NavMenu = styled.ul`
     left: ${({ clicked }) => (clicked ? 0 : "-100%")};
     opacity: 1;
     transition: all 0.5s ease;
-    background: #101522;
+    background: ${primaryColor};
   }
 `;
 
@@ -75,7 +84,7 @@ export const NavItem = styled.li`
   border-bottom: 2px solid transparent;
 
   &:hover {
-    border-bottom: 3px solid #4b59f7;
+    border-bottom: 3px solid ${ternaryColor};
   }
 
   @media screen and (max-width: 960px) {
@@ -88,7 +97,7 @@ export const NavItem = styled.li`
 `;
 
 export const NavLinks = styled(Link)`
-  color: #fff;
+  color: ${secondaryColor};
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -102,7 +111,7 @@ export const NavLinks = styled(Link)`
     display: table;
 
     &:hover {
-      color: #4b59f7;
+      background-color: ${ternaryColor};
       transition: all 0.3s ease;
     }
   }
