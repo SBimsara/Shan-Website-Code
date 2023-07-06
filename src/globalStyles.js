@@ -16,8 +16,8 @@ export const Container = styled.div`
   max-width: 1300px;
   margin-right: auto;
   margin-left: auto;
-  margin-right: 50px;
-  margin-left: 50px;
+  padding-right: 50px;
+  padding-left: 50px;
 
   @media screen and (max-width: 991px) {
     padding-right: 50px;
