@@ -4,7 +4,7 @@ export const homeObjOne = {
   lightTopLine: true,
   lightText: true,
   lightTextDesc: true,
-  topLine: "Marketing Agency",
-  headLine: "Lead generation spesialist for online businesses",
-  descriptiion: "We help business owners increase their revenue.",
+  topLine: "Food Packeting & Distribution Agency",
+  headLine: "Lead specialist for food Packeting and Distribution",
+  descriptiion: "",
 };
