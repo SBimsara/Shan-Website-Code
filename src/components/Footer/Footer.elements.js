@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
+import { FaHome, FaPhone, FaEnvelope } from "react-icons/fa";
 
 const primaryColor = "#000";
 const secondaryColor = "#fff";
@@ -26,7 +27,7 @@ export const FooterSubscription = styled.section`
 
 export const FooterLinksContainer = styled.div`
   width: 100%;
-  max-width: 1000px;
+  /* max-width: 1000px; */
   display: flex;
   justify-content: center;
 
@@ -127,4 +128,31 @@ export const SocialIconLink = styled.a`
     color: ${ternaryColor};
     transition: 0.3s ease-out;
   }
+`;
+
+export const AddressIcon = styled(FaHome)`
+  font-size: 23px;
+`;
+
+export const PhoneIcon = styled(FaPhone)`
+  font-size: 20px;
+`;
+
+export const EmailIcon = styled(FaEnvelope)`
+  font-size: 19px;
+`;
+
+export const FooterDetail = styled.div`
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  /* text-decoration: none; */
+  margin-bottom: 0.6rem;
+`;
+
+export const FooterDetailText = styled.div`
+  color: #fff;
+  text-decoration: none;
+  font-size: 12px;
+  margin-left: 0.6rem;
 `;

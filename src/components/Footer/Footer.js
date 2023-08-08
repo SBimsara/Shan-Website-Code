@@ -13,8 +13,21 @@ import {
   WebsiteRights,
   SocialIcons,
   SocialIconLink,
+  AddressIcon,
+  PhoneIcon,
+  EmailIcon,
+  FooterDetail,
+  FooterDetailText,
 } from "./Footer.elements";
-import { FaFacebook, FaInstagram, FaLinkedin, FaYoutube } from "react-icons/fa";
+import {
+  FaFacebook,
+  FaInstagram,
+  FaLinkedin,
+  FaYoutube,
+  FaHome,
+  FaPhone,
+  FaEnvelope,
+} from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -59,6 +72,18 @@ const Footer = () => {
               </SocialIconLink>
             </SocialIcons>
           </FooterLinkItems>
+          {/* <FooterLinkItems>
+            <FooterDetail>
+              <AddressIcon />
+              <FooterDetailText>No 5, Test, test, Sri Lanka</FooterDetailText>
+            </FooterDetail>
+            <FooterDetail>
+              <PhoneIcon />
+            </FooterDetail>
+            <FooterDetail>
+              <EmailIcon />
+            </FooterDetail>
+          </FooterLinkItems> */}
         </FooterLinksWrapper>
       </FooterLinksContainer>
       <SocialMedia>
