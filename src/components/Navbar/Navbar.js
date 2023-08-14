@@ -40,7 +40,7 @@ const Navbar = () => {
               </NavItem>
 
               <NavItem>
-                <NavLinks to="/products">Products</NavLinks>
+                <NavLinks to="/shanproducts/products">Products</NavLinks>
               </NavItem>
 
               <NavItem>
